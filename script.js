@@ -4,7 +4,11 @@ const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 
 // Change text and gif when the Yes button is clicked
-yesBtn.addEventListener("click", () => { "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGI1cW5wMWhpaDF5b3pjdTF0OHZrcHJvaGkzOHJteDhmd245OGRnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Vuw9m5wXviFIQ/giphy.gif";
+yesBtn.addEventListener("click", () => { 
+  question.innerHTML = "I love you the mostest!";
+  gif.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWxhd3J2MWQ1N2d0eWNybW5sZWc0MndmcmpnM2NvbDkyYm1xc3B4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IzXiddo2twMmdmU8Lv/giphy.gif";
+  yesBtn.remove();
+  noBtn.remove();
 });
 
 // Make the No button move randomly on hover
